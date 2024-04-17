@@ -1,0 +1,34 @@
+[
+  {
+    "position": null,
+    "salary": 1000.0,
+    "technology_stack": "Java, Spring, React",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Data Scientist",
+    "salary": 1200.0,
+    "technology_stack": "Python, Machine Learning",
+    "recruiter_first_name": "Олена",
+    "recruiter_last_name": "Петрова",
+    "recruiter_company_name": "DataTech"
+  },
+  {
+    "position": null,
+    "salary": 800.0,
+    "technology_stack": "Selenium, Cypress",
+    "recruiter_first_name": "Іван",
+    "recruiter_last_name": "Франко",
+    "recruiter_company_name": "SoftServe"
+  },
+  {
+    "position": null,
+    "salary": 900.0,
+    "technology_stack": "React, Angular, Vue.js",
+    "recruiter_first_name": "Марія",
+    "recruiter_last_name": "Степаненко",
+    "recruiter_company_name": "EPAM"
+  }
+]

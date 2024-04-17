@@ -1,0 +1,136 @@
+[
+  {
+    "position": "Full-Stack Developer",
+    "salary": 1000.0,
+    "technology_stack": "Java, Spring, React, Spring Data",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Data Scientist",
+    "salary": 1000.0,
+    "technology_stack": "Python, TensorFlow, SQL",
+    "recruiter_first_name": "John",
+    "recruiter_last_name": "Doe",
+    "recruiter_company_name": "TechCorp"
+  },
+  {
+    "position": "Frontend Developer",
+    "salary": 4600.0,
+    "technology_stack": "JavaScript, Vue.js, HTML, CSS, SQL",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Software Engineer",
+    "salary": 2500.0,
+    "technology_stack": "C++, Qt, Boost, Python",
+    "recruiter_first_name": "John",
+    "recruiter_last_name": "Doe",
+    "recruiter_company_name": "TechCorp"
+  },
+  {
+    "position": "DevOps Engineer",
+    "salary": 2500,
+    "technology_stack": "Docker, Kubernetes, Jenkins, SQL",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Full-Stack Developer",
+    "salary": 1500.0,
+    "technology_stack": "Java, Angular, Spring",
+    "recruiter_first_name": "John",
+    "recruiter_last_name": "Doe",
+    "recruiter_company_name": "TechCorp"
+  },
+  {
+    "position": "Software Engineer",
+    "technology_stack": "Boost, C#, C++",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Software Engineer",
+    "technology_stack": "C++, C, OpenGL",
+    "recruiter_first_name": "Anna",
+    "recruiter_last_name": "Bell",
+    "recruiter_company_name": "EPAM"
+  },
+  {
+    "technology_stack": "C++, C, OpenGL",
+    "recruiter_first_name": "Anna",
+    "recruiter_last_name": "Bell",
+    "recruiter_company_name": "EPAM"
+  },
+  {
+    "position": null,
+    "technology_stack": "C++, C, OpenGL",
+    "recruiter_first_name": "Anna",
+    "recruiter_last_name": "Bell",
+    "recruiter_company_name": "EPAM"
+  },
+  {
+    "position": "Software Engineer",
+    "technology_stack": "C++, C, OpenGL"
+  },
+  {
+    "position": "Software Engineer",
+    "technology_stack": "C++, C, OpenGL",
+    "recruiter_last_name": "Bell",
+    "recruiter_company_name": "EPAM"
+  },
+  {
+    "position": "Software Engineer",
+    "technology_stack": "C++, C, OpenGL",
+    "recruiter_last_name": "Bell",
+    "recruiter_company_name": "EPAM"
+  },
+  {
+    "position": "DevOps Engineer",
+    "salary": 2500,
+    "technology_stack": null,
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Frontend Developer",
+    "salary": 4600.0,
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "Data Scientist",
+    "technology_stack": "Python, TensorFlow, SQL",
+    "recruiter_first_name": "John",
+    "recruiter_last_name": "Doe",
+    "recruiter_company_name": "TechCorp"
+  },
+  {
+    "position": "Full-Stack Developer",
+    "salary": null,
+    "technology_stack": "Java, Spring Boot, Redux, Spring Data",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "DevOps Engineer",
+    "salary": -2500,
+    "technology_stack": "Docker, Kubernetes, Jenkins, SQL",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_last_name": "Bondar",
+    "recruiter_company_name": "ProfITsoft"
+  },
+  {
+    "position": "DevOps Engineer",
+    "recruiter_first_name": "Vladyslav",
+    "recruiter_company_name": "SortServe"
+  }
+]

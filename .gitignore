@@ -1,0 +1,14 @@
+*/target
+*/.idea
+*/.git
+*/.gitignore
+*/.gitattributes
+*/.DS_Store
+*/.classpath
+*/.project
+*/.settings
+*/.iml
+/.idea
+
+*/src/test/resources/json/vacancy/temp
+
