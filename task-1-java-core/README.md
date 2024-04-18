@@ -149,3 +149,9 @@ To validate the parallel execution of `VacancyStatisticService`, adhere to the f
     - Salary stats: 1284 ms
     - Recruiter stats: 6033 ms
     - Technology stack 2540: 2683 ms
+
+## Potential Problems
+
+1. **Can't find input folder**: If the input folder specified in the command-line arguments does not exist, the
+   application will display an error message and terminate. If you sure that the folder exists, check the path you.
+   Example args: `task-1-java-core/src/test/resources/json/vacancy/temp position`
