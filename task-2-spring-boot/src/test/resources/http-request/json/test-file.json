@@ -1,0 +1,52 @@
+[
+  {
+    "position": "Java Developer",
+    "salary": 50000,
+    "technology_stack": ["Java", "Spring"],
+    "recruiter_id": 1
+  },
+  {
+    "position": "Python Developer",
+    "salary": 60000,
+    "technology_stack": null,
+    "recruiter_id": 2
+  },
+  {
+    "position": "Frontend Developer",
+    "salary": 40000,
+    "technology_stack": [],
+    "recruiter_id": 3
+  },
+  {
+    "position": "Backend Developer",
+    "salary": -45000,
+    "technology_stack": ["Node.js", "Express"],
+    "recruiter_id": 4
+  },
+  {
+    "position": "Fullstack Developer",
+    "salary": 70000,
+    "technology_stack": ["React", "Node.js", "Express"],
+    "recruiter_id": 5
+  },
+  {
+    "position": "Fullstack Developer",
+    "salary": 60000,
+    "technology_stack": ["Angular", "Node.js", "MongoDB"],
+    "recruiter_id": "FIVE"
+  },
+  {
+    "position": "Fullstack Developer Part-time",
+    "recruiter_id": 2
+  },
+  {
+    "position": "Flutter Developer",
+    "recruiter_id": 2000
+  },
+  {
+    "position": "React Developer Part-time",
+    "salary": 30000,
+    "technology_stack": ["React", "Node.js", "Express"],
+    "recruiter_id": null
+  }
+]

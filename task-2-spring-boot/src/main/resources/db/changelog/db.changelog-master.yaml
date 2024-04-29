@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/001-create-people-table.yaml
+  - include:
+      file: db/changelog/changeset/002-create-recruiter-table.yaml
+  - include:
+      file: db/changelog/changeset/003-create-vacancies-table.yaml
+  - include:
+      file: db/changelog/changeset/004-create-table-technology-stacks.yaml
+  - include:
+      file: db/changelog/changeset/005-insert-testing-data.yaml

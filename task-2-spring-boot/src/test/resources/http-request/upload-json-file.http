@@ -1,0 +1,10 @@
+### If you want to test uploading file to the server, you can use the following curl command:
+POST http://localhost:8080/api/v1/vacancy/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test-file.json"
+Content-Type: application/json
+
+< ./json/test-file.json
+--WebAppBoundary--

@@ -10,5 +10,8 @@
 */.iml
 /.idea
 
+/*.iml
+/*.xml
+
 */src/test/resources/json/vacancy/temp
 

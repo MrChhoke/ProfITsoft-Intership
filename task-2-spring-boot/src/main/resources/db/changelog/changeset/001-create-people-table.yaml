@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-people-table
+      author: Vladyslav Bondar
+      changes:
+        - createSequence:
+            sequenceName: people_seq_id
+            startValue: 1
+            incrementBy: 1
+        - createTable:
+            tableName: people
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: people_seq_id
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: people_pk
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    checkConstraint: "first_name <> ''"
+              - column:
+                  name: last_name
+                  type: varchar(255)
+                  constraints:
+                    checkConstraint: "last_name <> ''"
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - sql:
+            dbms: postgresql
+            endDelimiter: ';'
+            sql: "ALTER TABLE people ALTER COLUMN created_at SET DEFAULT CURRENT_TIMESTAMP; 
+                  ALTER TABLE people ALTER COLUMN updated_at SET DEFAULT CURRENT_TIMESTAMP;"

@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+        id: create-table-technology-stacks
+        author: Vladyslav Bondar
+        changes:
+          - createSequence:
+              sequenceName: technology_stacks_seq_id
+              startValue: 1
+              incrementBy: 1
+          - createTable:
+              tableName: technology_stacks
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    defaultValueSequenceNext: technology_stacks_seq_id
+                    constraints:
+                      primaryKey: true
+                      primaryKeyName: technology_stacks_pk
+                      nullable: false
+                - column:
+                    name: name
+                    type: varchar(255)
+                    constraints:
+                      nullable: false
+                      checkConstraint: "name <> ''"
+                - column:
+                    name: vacancy_id
+                    type: bigint
+                    constraints:
+                      nullable: false
+                      foreignKeyName: technology_stacks_vacancy_fk
+                      references: vacancies(id)

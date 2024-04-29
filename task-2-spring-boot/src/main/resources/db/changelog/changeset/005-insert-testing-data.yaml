@@ -1,0 +1,305 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-testing-data
+      author: Vladyslav Bondar
+      changes:
+        - insert:
+            tableName: people
+            columns:
+              - column:
+                  name: first_name
+                  value: Vladyslav
+              - column:
+                  name: last_name
+                  value: Bondar
+              - column:
+                  name: created_at
+                  value: 2020-12-11 12:00:22
+              - column:
+                  name: updated_at
+                  value: 2021-06-01 13:22:12
+        - insert:
+            tableName: people
+            columns:
+              - column:
+                  name: first_name
+                  value: John
+              - column:
+                  name: last_name
+                  value: Doe
+              - column:
+                  name: created_at
+                  value: 2020-10-11 10:12:02
+              - column:
+                  name: updated_at
+                  value: 2022-06-05 17:11:18
+        - insert:
+            tableName: people
+            columns:
+              - column:
+                  name: first_name
+                  value: Jane
+              - column:
+                  name: last_name
+                  value: Doe
+              - column:
+                  name: created_at
+                  value: 2019-08-03 12:26:00
+              - column:
+                  name: updated_at
+                  value: 2023-07-19 14:56:57
+        - insert:
+            tableName: recruiters
+            columns:
+              - column:
+                  name: company_name
+                  value: Google
+              - column:
+                  name: created_at
+                  value: 2020-12-11 12:00:22
+              - column:
+                  name: updated_at
+                  value: 2021-06-01 13:22:12
+              - column:
+                  name: person_id
+                  valueNumeric: 1
+        - insert:
+            tableName: recruiters
+            columns:
+              - column:
+                  name: company_name
+                  value: Microsoft
+              - column:
+                  name: created_at
+                  value: 2020-10-11 10:12:02
+              - column:
+                  name: updated_at
+                  value: 2022-06-05 17:11:18
+              - column:
+                  name: person_id
+                  valueNumeric: 2
+        - insert:
+            tableName: recruiters
+            columns:
+              - column:
+                  name: company_name
+                  value: Apple
+              - column:
+                  name: created_at
+                  value: 2019-08-03 12:26:00
+              - column:
+                  name: updated_at
+                  value: 2023-07-19 14:56:57
+              - column:
+                  name: person_id
+                  valueNumeric: 3
+        - insert:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: position
+                  value: Java Developer
+              - column:
+                  name: salary
+                  valueNumeric: 1000.00
+              - column:
+                  name: created_at
+                  value: 2020-12-11 12:00:22
+              - column:
+                  name: updated_at
+                  value: 2021-06-01 13:22:12
+              - column:
+                  name: recruiter_id
+                  valueNumeric: 1
+        - insert:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: position
+                  value: Python Developer
+              - column:
+                  name: salary
+                  valueNumeric: 2000.00
+              - column:
+                  name: created_at
+                  value: 2020-10-11 10:12:02
+              - column:
+                  name: updated_at
+                  value: 2022-06-05 17:11:18
+              - column:
+                  name: recruiter_id
+                  valueNumeric: 2
+        - insert:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: position
+                  value: C# Developer
+              - column:
+                  name: salary
+                  valueNumeric: 3000.00
+              - column:
+                  name: created_at
+                  value: 2019-08-03 12:26:00
+              - column:
+                  name: updated_at
+                  value: 2023-07-19 14:56:57
+              - column:
+                  name: recruiter_id
+                  valueNumeric: 3
+        - insert:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: position
+                  value: C++ Developer
+              - column:
+                  name: salary
+                  valueNumeric: 4000.00
+              - column:
+                  name: created_at
+                  value: 2018-06-01 09:00:00
+              - column:
+                  name: updated_at
+                  value: 2024-05-01 11:00:00
+              - column:
+                  name: recruiter_id
+                  valueNumeric: 1
+        - insert:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: position
+                  value: Ruby Developer
+              - column:
+                  name: salary
+                  valueNumeric: 5000.00
+              - column:
+                  name: created_at
+                  value: 2017-04-01 08:00:00
+              - column:
+                  name: updated_at
+                  value: 2025-04-01 10:00:00
+              - column:
+                  name: recruiter_id
+                  valueNumeric: 2
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Java
+              - column:
+                  name: vacancy_id
+                  value: 1
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Spring
+              - column:
+                  name: vacancy_id
+                  value: 1
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: PostgreSQL
+              - column:
+                  name: vacancy_id
+                  value: 1
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Python
+              - column:
+                  name: vacancy_id
+                  value: 2
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Django
+              - column:
+                  name: vacancy_id
+                  value: 2
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Flask
+              - column:
+                  name: vacancy_id
+                  value: 2
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: C#
+              - column:
+                  name: vacancy_id
+                  value: 3
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Microsoft SQL Server
+              - column:
+                  name: vacancy_id
+                  value: 3
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: C++
+              - column:
+                  name: vacancy_id
+                  value: 4
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: OpenGL
+              - column:
+                  name: vacancy_id
+                  value: 4
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Ruby
+              - column:
+                  name: vacancy_id
+                  value: 5
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: MongoDB
+              - column:
+                  name: vacancy_id
+                  value: 5
+        - insert:
+            tableName: technology_stacks
+            columns:
+              - column:
+                  name: name
+                  value: Ruby on Rails
+              - column:
+                  name: vacancy_id
+                  value: 5
+
+
+

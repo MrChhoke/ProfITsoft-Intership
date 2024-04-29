@@ -1,0 +1,34 @@
+### Create a new recruiter
+POST http://localhost:8080/api/v1/recruiter
+Content-Type: application/json
+
+{
+  "first_name": "{{$random.alphabetic(10)}}",
+  "last_name": "{{$random.alphabetic(10)}}",
+  "company_name": "{{$random.alphabetic(20)}}"
+}
+
+### Update a recruiter
+PUT http://localhost:8080/api/v1/recruiter/6
+Content-Type: application/json
+
+{
+  "company_name": "{{$random.alphabetic(50)}}"
+}
+
+### Get the recruiter by id
+GET http://localhost:8080/api/v1/recruiter/6
+
+### Get all vacancies for a recruiter
+### Page and size are required
+POST http://localhost:8080/api/v1/vacancy/_list
+Content-Type: application/json
+
+{
+  "page": 0,
+  "size": 10,
+  "recruiter_id": 6
+}
+
+### Delete a recruiter by id
+DELETE http://localhost:8080/api/v1/recruiter/5

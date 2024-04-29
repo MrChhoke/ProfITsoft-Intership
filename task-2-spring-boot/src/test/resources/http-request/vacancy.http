@@ -1,0 +1,38 @@
+### Create a new vacancy
+POST http://localhost:8080/api/v1/vacancy
+Content-Type: application/json
+
+{
+  "position": "Software Engineer {{$random.integer(1,1000)}}",
+  "company": "ProfITsoft",
+  "salary": {{$random.float(300,10000)}},
+  "recruiter_id": {{$random.integer(1,3)}}
+}
+
+### Update vacancy
+PUT http://localhost:8080/api/v1/vacancy/11
+Content-Type: application/json
+
+{
+  "position": "Senior Software Engineer {{$random.integer(1,1000)}}",
+  "company": "Google",
+  "salary": {{$random.float(30000,100000)}},
+  "recruiter_id": {{$random.integer(1,3)}}
+}
+
+### Delete vacancy by id
+DELETE http://localhost:8080/api/v1/vacancy/1
+
+### Get excel report for all vacancies
+POST http://localhost:8080/api/v1/vacancy/_report
+Content-Type: application/json
+
+
+### Get excel report for vacancies with salary between 40000 and 50000
+POST http://localhost:8080/api/v1/vacancy/_report
+Content-Type: application/json
+
+{
+  "min_salary": 40000,
+  "max_salary": 50000
+}

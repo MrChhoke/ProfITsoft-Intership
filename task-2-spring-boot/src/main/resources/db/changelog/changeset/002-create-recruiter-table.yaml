@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-recruiter-table
+      author: Vladyslav Bondar
+      changes:
+        - createSequence:
+            sequenceName: recruiters_seq_id
+            startValue: 1
+            incrementBy: 1
+        - createTable:
+            tableName: recruiters
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: recruiters_seq_id
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: recruiter_pk
+                    nullable: false
+              - column:
+                  name: company_name
+                  type: varchar(255)
+                  constraints:
+                      checkConstraint: "company_name <> ''"
+              - column:
+                    name: created_at
+                    type: timestamp
+                    constraints:
+                        nullable: false
+              - column:
+                    name: updated_at
+                    type: timestamp
+                    constraints:
+                        nullable: false
+              - column:
+                  name: person_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: recruiter_person_fk
+                    references: people(id)
+        - sql:
+            dbms: postgresql
+            endDelimiter: ';'
+            sql: "ALTER TABLE recruiters ALTER COLUMN created_at SET DEFAULT CURRENT_TIMESTAMP; 
+                  ALTER TABLE recruiters ALTER COLUMN updated_at SET DEFAULT CURRENT_TIMESTAMP;"

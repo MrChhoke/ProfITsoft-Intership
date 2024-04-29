@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-vacancies-table
+      author: Vladyslav Bondar
+      changes:
+        - createSequence:
+            sequenceName: vacancies_seq_id
+            startValue: 1
+            incrementBy: 1
+        - createTable:
+            tableName: vacancies
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  defaultValueSequenceNext: vacancies_seq_id
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: vacancies_pk
+                    nullable: false
+              - column:
+                  name: position
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    checkConstraint: "title <> ''"
+              - column:
+                  name: salary
+                  type: numeric(10, 2)
+                  constraints:
+                    checkConstraint: "salary > 0"
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: recruiter_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: vacancies_recruiter_fk
+                    references: recruiters(id)
+        - createIndex:
+            tableName: vacancies
+            indexName: vacancies_position_idx
+            unique: false
+            columns:
+              - column:
+                  name: position
+        - sql:
+            dbms: postgresql
+            endDelimiter: ';'
+            sql: "ALTER TABLE vacancies ALTER COLUMN created_at SET DEFAULT CURRENT_TIMESTAMP; 
+                  ALTER TABLE vacancies ALTER COLUMN updated_at SET DEFAULT CURRENT_TIMESTAMP;"
